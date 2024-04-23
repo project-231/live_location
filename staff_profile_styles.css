@@ -1,0 +1,120 @@
+
+* {
+    vertical-align: baseline;
+    font-weight: inherit;
+
+    border: 0 none;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    font-weight: bolder;
+    color: black;
+    height: 200vh;
+    width: 100vw;
+}
+
+
+.main-content-container {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0 auto;
+    height: 100vh;
+    width: 55vw;
+}
+
+.nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#623DEE;
+    margin-bottom: 25px;
+    padding: 15px 50px;
+}
+.nav-title {
+    flex: 1;
+    color: rgb(240, 240, 240, 1);
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-left: 25px;
+}
+.nav-links {
+    display: flex;
+    flex: 1;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 2rem;
+    color: white;
+}
+.btn {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: center;
+    color: rgb(240, 240, 240, 1);
+    background-color:rgba(150, 150, 255, 1);
+    border: 2px solid black;
+    border-radius: 3rem;
+    height: 3rem;
+    padding: 5px;
+    width: 150px;
+    box-shadow: 1px 1px 1px 1px rgba(75, 75, 255, 1);
+}
+.btn:hover {
+    background-color:rgba(75, 75, 255, 1);
+    border:2px solid rgba(150, 150, 255, 1) ;
+}
+
+.pic{
+  width: 75px;
+  margin-left: auto;
+  display: block;
+  margin-right: auto;
+  justify-content: center;
+}
+.name{
+  justify-content: center;
+  text-align: center;
+  font-size: 3rem
+}
+.status{
+  display: block;
+  border: 3px solid black;
+  height: 60vh;
+  width: 35%;
+  justify-content: center;
+  margin: auto;
+  margin-top: 5%;
+  border-radius: 3rem;
+  box-shadow: 1px 1px 1px 1px rgba(75, 75, 255, 1);
+}
+.ip{
+  margin-top: 2rem;
+}
+.lab{
+  font-size: 1.5rem;
+}
+.sections{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.OnDuty{
+  text-align: center;
+  margin-top: 5%;
+
+}
+.status >p{
+  font-size: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+

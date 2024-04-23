@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="staff_profile_styles.css">
+    <title>Transit Tracker</title>
+</head>
+<body>
+    <div class="nav">
+        <img class="pic" src="image\blank pfp.png" alt="pfp">
+        <p class="nav-title">Abhiram</p>
+        <ul class="nav-links">
+            <li>Home</a></li>
+            <li >Notifications</li>
+            <li>Schedule</a></li>
+            <li><button class="btn">Sign Out</button></li>
+        </ul>   
+    </div>
+    <div class="status">
+        <h1 class="OnDuty">Status: On Duty</h1>
+        <p id="busId">Bus Id:  </p>
+        <p id="startPoint">Start point: </p>
+        <p id="endPoint">End point:</p>
+    </div>
+
+    <script src="staff_profile.js" type="module"></script>
+    <script type="text/javascript">
+        const routescheduleid_staff = localStorage.getItem('routescheduleid_staff');
+        const from = localStorage.getItem('from');
+        const to = localStorage.getItem('to');
+
+        document.getElementById('busId').textContent += routescheduleid_staff;
+        document.getElementById('startPoint').textContent += from;
+        document.getElementById('endPoint').textContent += to;
+    </script>
+</body>
+</html>
